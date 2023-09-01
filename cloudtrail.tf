@@ -7,7 +7,7 @@ resource "aws_cloudtrail" "good_example" {
 
      data_resource {
        type = "AWS::S3::Object"
-       values = ["${data.aws_s3_bucket.important-bucket.arn}/"]
+       values = ["${data.aws_s3_bucket.important-bucket.arn}"]
      }
    }
  }
